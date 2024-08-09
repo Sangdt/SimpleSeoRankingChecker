@@ -27,7 +27,7 @@ namespace SeoChecker.SEORankChecker.Google
                         results.AddPosition(result);
                     }
                     pageNo++;
-                    await Task.Delay(10000);
+                    await Task.Delay(5000);
                     continue;
                 };
                 break;
@@ -47,7 +47,6 @@ namespace SeoChecker.SEORankChecker.Google
                 {
                     position++;
                 }
-                if (position > 100) break;
             }
          
             return position;
